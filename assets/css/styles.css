@@ -1,0 +1,29 @@
+/* ===[HỖ TRỢ CSS VÀ KÍCH THƯỚC FONT CHỮ ĐỒNG BỘ VỀ REM]=== */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0f1b4c;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===[COMMON]=== */
+.container {
+    width: 1155px;
+    max-width: 100%;
+    margin: 0 auto;
+}
