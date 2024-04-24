@@ -1,0 +1,249 @@
+/* ======[PC]======= */
+@media screen and (min-width: 992px) {
+    .header__wrapper--mb {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1096px) {
+    .hero__wrapper {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+    .hero__images {
+        order: 2;
+        margin: 71px auto 0;
+    }
+
+    .hero__info {
+        order: 1;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .servicesB__inner--body {
+        margin-top: 71px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .servicesB__inner--body-left,
+    .servicesB__inner--body-center,
+    .servicesB__inner--body-right {
+        grid-column: 1;
+    }
+
+    .servicesB__inner--item-box {
+        width: 100%;
+        margin: auto;
+    }
+
+    .servicesB__inner--body-right .servicesB__inner--list{
+        margin-top: 50px;
+    }
+}
+
+/* ======[TABLET & MOBILE]======= */
+@media screen and (max-width: 991.98px) {
+    .navbar {
+        display: none;
+    }
+
+    .header__wrapper {
+        position: relative;
+    }
+
+    .header__icon-menu {
+        width: 24px;
+        color: var(--primary-color);
+    }
+
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero__wrapper {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+    .hero__images {
+        order: 2;
+        margin: 71px auto 0;
+    }
+
+    .hero__vector-net {
+        display: none;
+    }
+
+    .hero__info {
+        order: 1;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 5;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s, visibility 0.5s;
+    }
+
+    .menu-drawer {
+        padding: 25px 40px;
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 6;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .navbar__list-mb {
+        margin-top: 30px;
+        /* margin-left: -17px; */
+    }
+
+    .navbar__list-mb .navbar__link {
+        display: block;
+        text-align: left;
+        padding: 20px 0;
+    }
+
+    .about__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .about__info {
+        padding-right: 18px;
+        width: 100%;
+    }
+
+    .about__img-wrapper {
+        margin-left: -136px;
+        width: 100%;
+    }
+
+    .about__images--box-info {
+        margin-bottom: 35px;
+    }
+
+    .about__img--deco {
+        display: none;
+    }
+
+    .services__inner {
+        grid-template-columns: 1fr;
+        margin-top: 549px;
+    }
+
+    .services__images {
+        order: 2;
+        width: 100%;
+    }
+
+    .services__info {
+        order: 1;
+        width: 100%;
+    }
+
+    .services__img--icon-4 {
+        display: none;
+    }
+
+    .services__img--icon-6 {
+        margin-left: -100%;
+        margin-bottom: -55px;
+    }
+
+    .services__img--icon-2 {
+        display: none;
+    }
+}
+
+/* ======[TABLET]======= */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .header__btn {
+        padding: 14px 32px;
+    }
+
+    .hero__info--title {
+        font-size: 5.5rem;
+    }
+}
+
+/* ======[MOBILE]======= */
+@media screen and (max-width: 767.98px) {
+    .hero {
+        padding-bottom: 50px;
+    }
+    .header__btn {
+        padding: 12px 13px;
+    }
+
+    .hero__info--title {
+        font-size: 5rem;
+    }
+
+    .hero__images {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .hero__dog {
+        display: none;
+    }
+
+    .hero__cat {
+        width: 100%;
+        /* height: 488px; */
+    }
+
+    .hero__images--info {
+        display: none;
+    }
+
+    .hero__spin-circle {
+        bottom: 328px;
+        left: 0px;
+    }
+
+    .servicesB__inner--body {
+        margin-top: 71px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .servicesB__inner--body-left,
+    .servicesB__inner--body-center,
+    .servicesB__inner--body-right {
+        grid-column: 1;
+    }
+
+    .servicesB__inner--item-box {
+        width: 100%;
+        margin: auto;
+    }
+
+    .servicesB__inner--body-right .servicesB__inner--list{
+        margin-top: 50px;
+    }
+}

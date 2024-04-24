@@ -101,12 +101,30 @@
 
         <!-- STYLES CSS -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- RESPONSIVE CSS -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
-    <body>
+    <body style="height: 6000px">
         <!-- HEADER -->
         <header class="header">
             <div class="container">
+                <!-- Header PC -->
                 <section class="header__wrapper">
+                    <!-- Tablet/mobile menu -->
+                    <label for="menu-checkbox" class="header__toggle-menu">
+                        <svg
+                            class="header__icon-menu"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
                     <a href="#" class="logo">
                         <img
                             src="./assets/images/Logo.svg"
@@ -152,6 +170,63 @@
                     <a href="#!" class="header__btn"
                         ><span class="header__btn--text">Sign up</span></a
                     >
+                </section>
+
+                <!-- Header Tablet/mobile -->
+                <section class="header__wrapper--mb">
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="menu-checkbox"
+                        class="menu-checkbox"
+                        hidden
+                    />
+                    <!-- Overlay -->
+                    <label for="menu-checkbox" class="menu-overlay"></label>
+
+                    <!-- Menu content -->
+                    <div class="menu-drawer">
+                        <a href="#" class="logo-mb">
+                            <img
+                                src="./assets/images/Logo.svg"
+                                alt="Lucy"
+                                class="logo__img"
+                            />
+                        </a>
+                        <ul class="navbar__list-mb">
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link" title="Home"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link" title="About"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a
+                                    href="#!"
+                                    class="navbar__link"
+                                    title="Services & Rates"
+                                    >Services & Rates</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link" title="Review"
+                                    >Review</a
+                                >
+                            </li>
+                            <li class="navbar__item">
+                                <a
+                                    href="#!"
+                                    class="navbar__link"
+                                    title="Contacts us"
+                                    >Contacts us</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </section>
             </div>
         </header>
@@ -230,21 +305,15 @@
                             />
                         </section>
                         <section class="hero__info">
-                            <h1
-                                class="hero__info--title animate__animated animate__bounce"
-                            >
+                            <h1 class="hero__info--title animate__bounce">
                                 Established & Trusted Pet Care Service
                             </h1>
-                            <p
-                                class="hero__info--desc animate__animated animate__backInRight"
-                            >
+                            <p class="hero__info--desc animate__backInRight">
                                 Discover a wide variety of Pawsitive services to
                                 choose from, including daycare, private walks,
                                 office duty and spa.
                             </p>
-                            <div
-                                class="hero__atc animate__animated animate__bounceInUp"
-                            >
+                            <div class="hero__atc animate__bounceInUp">
                                 <div class="hero__atc-box">
                                     <a href="#!" class="hero__atc--btn"
                                         >Book a Meet</a
@@ -263,6 +332,492 @@
                     </div>
                 </div>
             </section>
+
+            <!-- ABOUT -->
+            <section class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <section class="about__info">
+                            <h3 class="about__info--sub-title">
+                                <pre>//  About  //</pre>
+                            </h3>
+                            <h2 class="about__info--title">
+                                Best Agency For Your Pet.
+                            </h2>
+                            <p class="about__info--desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <div class="about__info--featured">
+                                <div
+                                    class="about__info--row wow animate__rollIn"
+                                >
+                                    <div class="about__info--box-icon">
+                                        <svg
+                                            class="about__info--icon"
+                                            width="18"
+                                            height="18"
+                                            viewBox="0 0 18 18"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M15.1875 5.0625L7.3125 12.9371L3.375 9"
+                                                stroke="#FFF2E5"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <p class="about_info--topic">
+                                        Certified Groomer
+                                    </p>
+                                    <div class="about__info--box-icon">
+                                        <svg
+                                            class="about__info--icon"
+                                            width="18"
+                                            height="18"
+                                            viewBox="0 0 18 18"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M15.1875 5.0625L7.3125 12.9371L3.375 9"
+                                                stroke="#FFF2E5"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <p class="about_info--topic">
+                                        Animal Lover
+                                    </p>
+                                </div>
+                                <div
+                                    class="about__info--row wow animate__slideInRight"
+                                >
+                                    <div class="about__info--box-icon">
+                                        <svg
+                                            class="about__info--icon"
+                                            width="18"
+                                            height="18"
+                                            viewBox="0 0 18 18"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M15.1875 5.0625L7.3125 12.9371L3.375 9"
+                                                stroke="#FFF2E5"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <p class="about_info--topic">
+                                        14+ Years Experience
+                                    </p>
+                                    <div class="about__info--box-icon">
+                                        <svg
+                                            class="about__info--icon"
+                                            width="18"
+                                            height="18"
+                                            viewBox="0 0 18 18"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M15.1875 5.0625L7.3125 12.9371L3.375 9"
+                                                stroke="#FFF2E5"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <p class="about_info--topic">
+                                        Pet Parent Of 3 Dogs
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="about__images">
+                            <div class="about__images--box-info">
+                                <img
+                                    src="./assets/images/icon/foot-dog.svg"
+                                    alt=""
+                                    class="about__images--deco"
+                                />
+                                <span class="about__images--box-text-1"
+                                    >20+</span
+                                >
+                                <span class="about__images--box-text-2"
+                                    >Years Experience</span
+                                >
+                            </div>
+                            <figure
+                                class="about__img-wrapper wow animate__slideInUp"
+                            >
+                                <img
+                                    src="./assets/images/boy-cat.png"
+                                    alt=""
+                                    class="about__img"
+                                />
+                                <img
+                                    src="./assets/images/icon/icon-ran.svg"
+                                    alt=""
+                                    class="about__img--deco wow animate__fadeInTopRight"
+                                />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services A -->
+            <section class="services">
+                <div class="container">
+                    <div class="services__inner">
+                        <div class="services__images">
+                            <figure class="services__images--wrap">
+                                <img
+                                    src="./assets/images/dupble-dog.png"
+                                    alt=""
+                                    class="services__img"
+                                />
+                                <img
+                                    src="./assets/images/icon/Vector 8.svg"
+                                    alt=""
+                                    class="services__img--icon-1"
+                                />
+                                <img
+                                    src="./assets/images/icon/Vector 9.svg"
+                                    alt=""
+                                    class="services__img--icon-2"
+                                />
+                                <img
+                                    src="./assets/images/icon/Vector 10.svg"
+                                    alt=""
+                                    class="services__img--icon-3"
+                                />
+                                <img
+                                    src="./assets/images/icon/Vector 11.svg"
+                                    alt=""
+                                    class="services__img--icon-4"
+                                />
+                                <img
+                                    src="./assets/images/icon/Vector 12.svg"
+                                    alt=""
+                                    class="services__img--icon-5"
+                                />
+                                <img
+                                    src="./assets/images/icon/three-circle.svg"
+                                    alt=""
+                                    class="services__img--icon-6"
+                                />
+                            </figure>
+                        </div>
+                        <section class="services__info">
+                            <h2 class="services__info--title">
+                                Taking A Vacation? So Is Your Pet.
+                            </h2>
+                            <p class="services__info--desc">
+                                We offer long-term and short-term boarding.
+                                Every dog has its own private, spacious room and
+                                daily individual time in our large play yard.
+                            </p>
+                            <div class="services__info--row">
+                                <div class="services__info--item">
+                                    <img
+                                        src="./assets/images/icon/Group 32.svg"
+                                        alt=""
+                                        class="services__info--icon"
+                                        style="margin-right: 0"
+                                    />
+                                    <h3 class="services__info--text">
+                                        Pet Boarding
+                                    </h3>
+                                </div>
+                                <div class="services__info--item">
+                                    <img
+                                        src="./assets/images/icon/Group 36.svg"
+                                        alt=""
+                                        class="services__info--icon"
+                                        style="margin-bottom: -8px"
+                                    />
+                                    <h3 class="services__info--text">
+                                        Pet Daycare
+                                    </h3>
+                                </div>
+                                <div class="services__info--item">
+                                    <img
+                                        src="./assets/images/icon/Group.svg"
+                                        alt=""
+                                        class="services__info--icon"
+                                    />
+                                    <h3 class="services__info--text">
+                                        Pet Transport
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="services__info--line"></div>
+                            <p class="services__info--desc-2">
+                                While you're on holiday, here's where your furry
+                                friends will spend their time.
+                            </p>
+                            <a href="#!" class="services__info--view-all"
+                                >View more</a
+                            >
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services B -->
+            <section class="servicesB">
+                <div class="container">
+                    <div class="servicesB__inner">
+                        <div class="servicesB__inner--heading">
+                            <h2 class="servicesB__inner--sub-title">
+                                What we do for you?
+                            </h2>
+                            <p class="servicesB__inner--title">Our Services</p>
+                        </div>
+                        <div class="servicesB__inner--body">
+                            <div class="servicesB__inner--body-left">
+                                <ul class="servicesB__inner--list">
+                                    <li class="servicesB__inner--item">
+                                        <div class="servicesB__inner--item-box">
+                                            <h3
+                                                class="servicesB__inner--item-title"
+                                            >
+                                                Puppy Sitting
+                                            </h3>
+                                            <p
+                                                class="servicesB__inner--item-desc"
+                                            >
+                                                Helping your new pup to be a
+                                                good boy or girl isn’t always
+                                                easy, but we’re here to help.
+                                            </p>
+                                            <div
+                                                class="servicesB__inner--item-view"
+                                            >
+                                                <a
+                                                    href="#!"
+                                                    class="servicesB__inner--item-link"
+                                                >
+                                                    Read More
+                                                </a>
+                                                <img
+                                                    src="./assets/images/icon/ArrowUpRight.svg"
+                                                    alt=""
+                                                    class="servicesB__inner--item-icon"
+                                                />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="servicesB__inner--item">
+                                        <div class="servicesB__inner--item-box">
+                                            <h3
+                                                class="servicesB__inner--item-title"
+                                            >
+                                                Dog Walking
+                                            </h3>
+                                            <p
+                                                class="servicesB__inner--item-desc"
+                                            >
+                                                Choose from a 30, 45, or
+                                                60-minute visit to give your pet
+                                                their daily dose of fun-filled.
+                                            </p>
+                                            <div
+                                                class="servicesB__inner--item-view"
+                                            >
+                                                <a
+                                                    href="#!"
+                                                    class="servicesB__inner--item-link"
+                                                >
+                                                    Read More
+                                                </a>
+                                                <img
+                                                    src="./assets/images/icon/ArrowUpRight.svg"
+                                                    alt=""
+                                                    class="servicesB__inner--item-icon"
+                                                />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="servicesB__inner--item">
+                                        <div class="servicesB__inner--item-box">
+                                            <h3
+                                                class="servicesB__inner--item-title"
+                                            >
+                                                Pet Sitting
+                                            </h3>
+                                            <p
+                                                class="servicesB__inner--item-desc"
+                                            >
+                                                While you’re away we can make
+                                                sure your pet has all the food,
+                                                water, exercise, and, of course.
+                                            </p>
+                                            <div
+                                                class="servicesB__inner--item-view"
+                                            >
+                                                <a
+                                                    href="#!"
+                                                    class="servicesB__inner--item-link"
+                                                >
+                                                    Read More
+                                                </a>
+                                                <img
+                                                    src="./assets/images/icon/ArrowUpRight.svg"
+                                                    alt=""
+                                                    class="servicesB__inner--item-icon"
+                                                />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="servicesB__inner--item"></li>
+                                    <li class="servicesB__inner--item"></li>
+                                </ul>
+                            </div>
+                            <div class="servicesB__inner--body-center">
+                                <figure class="servicesB__inner--body-bg">
+                                    <img
+                                        src="./assets/images/dog-female-big.png"
+                                        alt=""
+                                        class="servicesB__inner--body-img"
+                                    />
+                                </figure>
+                                <a
+                                    href="#!"
+                                    class="btn servicesB__inner--body-btn"
+                                    >View All Services</a
+                                >
+                            </div>
+                            <div class="servicesB__inner--body-right">
+                                <ul class="servicesB__inner--list">
+                                    <li class="servicesB__inner--item">
+                                        <div class="servicesB__inner--item-box">
+                                            <h3
+                                                class="servicesB__inner--item-title"
+                                            >
+                                                Overnight Care
+                                            </h3>
+                                            <p
+                                                class="servicesB__inner--item-desc"
+                                            >
+                                                If you’re away for the night, we
+                                                can stay the night or stop by in
+                                                the evening and morning.
+                                            </p>
+                                            <div
+                                                class="servicesB__inner--item-view"
+                                            >
+                                                <a
+                                                    href="#!"
+                                                    class="servicesB__inner--item-link"
+                                                >
+                                                    Read More
+                                                </a>
+                                                <img
+                                                    src="./assets/images/icon/ArrowUpRight.svg"
+                                                    alt=""
+                                                    class="servicesB__inner--item-icon"
+                                                />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="servicesB__inner--item">
+                                        <div class="servicesB__inner--item-box">
+                                            <h3
+                                                class="servicesB__inner--item-title"
+                                            >
+                                                Pet Taxi
+                                            </h3>
+                                            <p
+                                                class="servicesB__inner--item-desc"
+                                            >
+                                                Does your pet need a lift to the
+                                                groomers, vet, or dog park?
+                                                We’ve got their tail covered.
+                                            </p>
+                                            <div
+                                                class="servicesB__inner--item-view"
+                                            >
+                                                <a
+                                                    href="#!"
+                                                    class="servicesB__inner--item-link"
+                                                >
+                                                    Read More
+                                                </a>
+                                                <img
+                                                    src="./assets/images/icon/ArrowUpRight.svg"
+                                                    alt=""
+                                                    class="servicesB__inner--item-icon"
+                                                />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="servicesB__inner--item">
+                                        <div class="servicesB__inner--item-box">
+                                            <h3
+                                                class="servicesB__inner--item-title"
+                                            >
+                                                Pet Medical Admin
+                                            </h3>
+                                            <p
+                                                class="servicesB__inner--item-desc"
+                                            >
+                                                Our team of experienced
+                                                professionals can help with
+                                                everything from pills to
+                                                injections.
+                                            </p>
+                                            <div
+                                                class="servicesB__inner--item-view"
+                                            >
+                                                <a
+                                                    href="#!"
+                                                    class="servicesB__inner--item-link"
+                                                >
+                                                    Read More
+                                                </a>
+                                                <img
+                                                    src="./assets/images/icon/ArrowUpRight.svg"
+                                                    alt=""
+                                                    class="servicesB__inner--item-icon"
+                                                />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="servicesB__inner--item"></li>
+                                    <li class="servicesB__inner--item"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script>
+            new WOW({
+                animateClass: "animate__animated",
+                offset: 2,
+                mobile: true,
+            }).init();
+        </script>
     </body>
 </html>
